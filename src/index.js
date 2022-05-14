@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Button } from './components/Button';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root = ReactDOM.createRoot(document.getElementById('root'));;
+let app = <App />,btn = <Button/>
+console.log(app,btn)
 root.render(
   <React.StrictMode>
-    <App />
+    {app}
   </React.StrictMode>
 );
 

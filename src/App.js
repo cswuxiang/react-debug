@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import  {Button}  from './components/Button';
+import { List } from './components/List';
+
 
 function App() {
   const [name,setName] = useState("小花")
@@ -21,6 +24,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button></Button>
+      <List></List>
     </div>
   );
 }
