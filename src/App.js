@@ -9,7 +9,6 @@ function App() {
   
   return (
     <div className="App">
-      {name}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -25,8 +24,7 @@ function App() {
         </a>
       </header>
       <Button></Button>
-      <List></List>
-     
+      <List><div id="list-child">list-child</div></List>
     </div>
   );
 }
