@@ -10,12 +10,14 @@ export  class Button extends React.Component{
      }
     handleClick(){
 
-        this.setState({
-            counter:2
+        this.setState((prevState)=>{
+            // eslint-disable-next-line no-unused-expressions
+            return {counter:prevState.counter + 1}
         })
         
     }
     render(){
+        debugger;
          return  <>
             <button  onClick={this.handleClick}>我是button</button>
             <input value={this.state.counter}></input>

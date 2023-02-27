@@ -2,10 +2,9 @@ import * as React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Button } from './components/Button';
+import { Button } from './components/BtnClass';
 const rootElement = document.getElementById('root');
-const xx =  <App><div>abc</div></App>;
-console.log(xx)
+const Root =  <App></App>;
 ReactDOM.render(
-   xx,rootElement
+   Root,rootElement
 );
